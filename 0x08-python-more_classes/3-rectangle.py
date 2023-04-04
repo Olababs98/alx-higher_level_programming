@@ -5,6 +5,7 @@
 The Rectangle class represents a rectangle, with width and height attributes methods to calculate its area and perimeter.
 """
 
+
 class Rectangle:
     """Represent a rectangle"""
 
