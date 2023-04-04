@@ -14,7 +14,6 @@ class Rectangle:
 
     @property
     def width(self):
-        """Get the width of the Rectangle."""
         return self.__width
 
     @width.setter
@@ -27,7 +26,6 @@ class Rectangle:
             self.__width = value
 
     @property
-    """get the height of Rectangle."""
     def height(self):
         return self.__height
 
@@ -41,15 +39,12 @@ class Rectangle:
             self.__height = value
 
     def area(self):
-        """Return the area of the Rectangle"""
         return self.__width * self.__height
 
     def perimeter(self):
-        """Return the perimeter of the Rectangle"""
         return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        """Return the printable representation of the rectangle."""
         if self.__width == 0 or self.__height == 0:
             return ""
         else:
