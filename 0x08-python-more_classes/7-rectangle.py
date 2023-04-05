@@ -35,7 +35,6 @@ class Rectangle:
     @property
     def height(self):
         """Getter method for height"""
-
         return self.__height
 
     @height.setter
@@ -46,7 +45,6 @@ class Rectangle:
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >= 0")
-        else:
             self.__height = value
 
     def area(self):
@@ -59,16 +57,14 @@ class Rectangle:
 
         if self.width == 0 or self.height == 0:
             return 0
-        else:
-            return 2 * (self.width + self.height)
+        return 2 * (self.width + self.height)
 
     def __str__(self):
         """Return a string representation of the rectangle"""
 
         if self.width == 0 or self.height == 0:
             return ""
-        else:
-            return (str(self.print_symbol) * self.width + "\n") * self.height
+            return "\n".join([str(self.print_symbol) * self.width] * self.height)
 
     def __repr__(self):
         """Return a string representation of the rectangle"""
