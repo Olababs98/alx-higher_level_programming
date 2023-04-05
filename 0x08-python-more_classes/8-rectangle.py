@@ -8,6 +8,8 @@ class Rectangle:
     perimeter. Includes class attributes to keep track of the number of
     instances and the symbol to use for string representation.
     """
+
+
     number_of_instances = 0
     print_symbol = "#"
 
@@ -96,12 +98,40 @@ class Rectangle:
             return 0
         else:
             return (self.width + self.height) * 2
+    def __str__(self):
+        # check if width or height is 0
+        if self.width == 0 or self.height == 0:
+            # return an empty string
+            return ""
+        # return the string representation of the rectangle
+        else:
+            return "\n".join([str(self.print_symbol) * self.width] * self.height)
+
+    # repr method
+    def __repr__(self):
+        # return the string representation of the rectangle to recreate a new instance
+        return f"Rectangle({self.width}, {self.height})"
+
+    # delete method
+    def __del__(self):
+        # decrement the instance counter
+        Rectangle.number_of_instances -= 1
+        # print the deletion message
+        print("Bye rectangle...")
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        """
-        Returns the Rectangle object with the larger area, or rect_1 if both
-        objects have the same area.
-        """
-        if type(rect_1) is not Rectangle:
+        # check if rect_1 is an instance of Rectangle
+        if not isinstance(rect_1, Rectangle):
+            # raise TypeError
             raise TypeError("rect_1 must be an instance of Rectangle")
+        # check if rect_2 is an instance of Rectangle
+        elif not isinstance(rect_2, Rectangle):
+            # raise TypeError
+            raise TypeError("rect_2 must be an instance of Rectangle")
+        # return the Rectangle object with the bigger or equal area
+        else:
+            if rect_1.area() >= rect_2.area():
+                return rect_1
+            else:
+                return rect_2
