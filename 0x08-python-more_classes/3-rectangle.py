@@ -8,7 +8,7 @@ The Rectangle class represents a rectangle, with width and height attributes met
 
 
 class Rectangle:
-    """Represent a rectangle"""
+    """Represent a rectangle."""
 
 
     def __init__(self, width=0, height=0):
@@ -54,4 +54,4 @@ class Rectangle:
             rect = []
             for i in range(self.__height):
                 rect.append("#" * self.__width)
-                return "\n".join(rect)
+            return "\n".join(rect)
