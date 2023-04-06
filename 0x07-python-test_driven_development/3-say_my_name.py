@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Define a name-printing fuction."""
+"""Defines a name printing fuction."""
 
 
 def say_my_name(first_name, last_name=""):
