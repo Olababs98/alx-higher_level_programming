@@ -7,9 +7,8 @@ This module defines a Rectangle.
 class Rectangle:
     """Represent a rectangle."""
 
-
     def __init__(self, width=0, height=0):
-    """Initialize a new rectangle."""
+        """Initialize a new rectangle."""
         self.width = width
         self.height = height
 
