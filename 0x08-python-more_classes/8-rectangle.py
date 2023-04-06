@@ -97,7 +97,8 @@ class Rectangle:
             return 0
         else:
             return (self.width + self.height) * 2
-        def __str__(self):
+        
+    def __str__(self):
         # check if width or height is 0
         if self.width == 0 or self.height == 0:
             # return an empty string
