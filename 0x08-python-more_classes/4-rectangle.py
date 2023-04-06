@@ -6,6 +6,7 @@ and methods to calculate its area and perimeter. The class also defines a
 string representation and a way to recreate instances using eval().
 """
 
+
 class Rectangle:
     """Represents a rectangle."""
 
