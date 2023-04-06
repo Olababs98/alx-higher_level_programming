@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""This module defines a Rectangle class with width and height attributes and methods to calculate its area and perimeter."""
+"""This module defines a Rectangle class with width and height attributes."""
 
 
 class Rectangle:
     """Represent a rectangle."""
-
 
     def __init__(self, width=0, height=0):
         self.__width = width
