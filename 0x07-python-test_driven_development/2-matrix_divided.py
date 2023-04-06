@@ -3,7 +3,7 @@
 
 
 def matrix_divided(matrix, div):
-    """Divide all element of a matrix by a given number and return a new matrix."""
+    """Difine all element of a matrix."""
 
     if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
