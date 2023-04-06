@@ -4,7 +4,7 @@
 
 class Rectangle:
     """
-    Rectangle Class
+    Rectangle Class.
     """
 
     number_of_instances = 0
@@ -17,8 +17,7 @@ class Rectangle:
 
     def __str__(self):
         if self.width == 0 or self.height == 0:
-            return ""
-        return ((str(self.print_symbol) * self.width + "\n") * self.height)[:-1]
+            return ("")
 
     def __repr__(self):
         return "Rectangle({:d}, {:d})".format(self.width, self.height)
