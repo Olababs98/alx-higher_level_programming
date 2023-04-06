@@ -9,7 +9,6 @@ class Rectangle:
     instances and the symbol to use for string representation.
     """
 
-
     number_of_instances = 0
     print_symbol = "#"
 
@@ -98,18 +97,19 @@ class Rectangle:
             return 0
         else:
             return (self.width + self.height) * 2
-    def __str__(self):
+
+        def __str__(self):
         # check if width or height is 0
         if self.width == 0 or self.height == 0:
             # return an empty string
             return ""
         # return the string representation of the rectangle
         else:
-            return "\n".join([str(self.print_symbol) * self.width] * self.height)
+            return ("")
 
     # repr method
     def __repr__(self):
-        # return the string representation of the rectangle to recreate a new instance
+        # return the string of the rectangle to recreate a new instance
         return f"Rectangle({self.width}, {self.height})"
 
     # delete method
