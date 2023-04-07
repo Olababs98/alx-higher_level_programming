@@ -22,3 +22,7 @@ def text_indentation(text):
                 c += 1
             continue
         c += 1
+
+    # test the function
+    if __name__ == '__main__':
+        text_indentation(12)
