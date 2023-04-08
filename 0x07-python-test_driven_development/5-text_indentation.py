@@ -3,7 +3,7 @@
 
 
 def text_indentation(text):
-    """ prints the given text with two new lines after each occurence '.','?'and ':'."""
+    """ prints two new lines after each occurence '.','?'and ':'."""
 
     if not isinstance(text, str):
         raise TypeError("text must be a string")
