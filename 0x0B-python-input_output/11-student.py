@@ -15,7 +15,7 @@ class Student:
         """Get a dictionary rep of the student."""
         if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
-            return {l: getattr(self, l) fro l in attrs if hasattr(self, l)}
+            return {l: getattr(self, l) for l in attrs if hasattr(self, l)}
         return self.__dict__
 
     def reload_from_json(self, json):
