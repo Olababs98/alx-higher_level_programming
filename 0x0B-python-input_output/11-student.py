@@ -15,10 +15,10 @@ class Student:
         """Get a dictionary rep of the student."""
         if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
-            return {l: getattr(self, l) for l in attrs if hasattr(self, l)}
+            return {g: getattr(self, g) for g in attrs if hasattr(self, g)}
         return self.__dict__
 
     def reload_from_json(self, json):
         """Replace all attributes of the student."""
-        for l, v in json.items():
-            setattr(self, l, v)
+        for g, v in json.items():
+            setattr(self, g, v)
