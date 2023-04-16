@@ -34,8 +34,8 @@ if __name__ == "__main__":
 
             try:
                 if line[-2] in valid_codes:
-                    if status_codes.get(line[-2], -1) == -1:
-                        status_codes[line[-2]] += 1
+                    if line[-2] not in status_codes:
+                        status_codes[line[-2]] = 1
                     else:
                         status_codes[line[-2]] += 1
             except IndexError:
