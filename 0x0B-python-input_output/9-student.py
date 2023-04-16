@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Defines a class student."""
-Student = __import__('9-student').Student
+
 
 
 class student:
