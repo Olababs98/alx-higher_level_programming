@@ -2,7 +2,6 @@
 """Defines a class student."""
 
 
-
 class Student:
     """Rep a student."""
 
