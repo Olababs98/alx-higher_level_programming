@@ -15,5 +15,5 @@ class Student:
         """Get a dict rep of the student."""
         if (type(attrs) == list and
                 all(type(ele) == str for ele in attrs)):
-            return {z:getattr(self, z) for z in attrs if hasattr(self, z)}
+            return {z: getattr(self, z) for z in attrs if hasattr(self, z)}
         return self.__dict__
