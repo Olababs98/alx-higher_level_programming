@@ -1,13 +1,19 @@
 #!/usr/bin/python3
-
-"""Defines a base model class."""
+# base.py
+"""Defininition of a base model class."""
 import json
 import csv
 import turtle
 
 
 class Base:
-    """Base model."""
+    """Represent the base model.
+    Represents the "base" for all other classes in project 0x0C*.
+    Attributes:
+        __nb_objects (int): The number of instantiated Bases.
+    """
+
+    __nb_objects = 0
 
     def __init__(self, id=None):
         """Initialize a new Base.
@@ -130,7 +136,7 @@ class Base:
 
     @staticmethod
     def draw(list_rectangles, list_squares):
-        """Draw Rectangles and Squares using the turtle module.
+        """Rectangles and Squares using the turtle module.
         Args:
             list_rectangles (list): A list of Rectangle objects to draw.
             list_squares (list): A list of Square objects to draw.
